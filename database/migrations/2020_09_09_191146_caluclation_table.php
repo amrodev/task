@@ -15,8 +15,8 @@ class CaluclationTable extends Migration
     {
         Schema::create('calculations', function (Blueprint $table) {
             $table->id();
-            $table->float('argument1', 15, 2);
-            $table->float('argument2', 15, 2);
+            $table->integer('argument1');
+            $table->integer('argument2');
             $table->float('average', 15, 2);
             $table->float('area', 15, 2);
             $table->float('squared_area', 15, 2);          
